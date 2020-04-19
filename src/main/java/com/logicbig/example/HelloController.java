@@ -12,7 +12,7 @@ public class HelloController {
     @GetMapping("/hello")
     public HelloObject getHelloWordObject() {
         HelloObject hello = new HelloObject();
-        hello.setMessage("Hi there! you are number " + counter.incrementAndGet());
+        hello.setMessage("Hi there! you are random number " + counter.incrementAndGet());
         return hello;
     }
 }
